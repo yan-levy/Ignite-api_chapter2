@@ -2,6 +2,7 @@ import { ISpecificationRespository } from "../../repositories/ISpecificationRepo
 
 interface IResquest {
     name: string;
+
     description: string;
 }
 
@@ -18,6 +19,7 @@ class CreateSpecificationUseCase {
 
         this.specificationsRepository.create({
             name,
+
             description,
         });
     }

@@ -4,6 +4,7 @@ import { ImportCategoryUseCase } from "./importCategoryUseCase";
 
 class ImportCategoryController {
     constructor(private importCategoryUsecase: ImportCategoryUseCase) {}
+
     handle(request: Request, response: Response): Response {
         const { file } = request;
 
